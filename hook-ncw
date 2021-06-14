@@ -1,0 +1,5 @@
+function nuevo_pais_woocommerce( $country ) {
+  $country["AE-DU"] = 'Dubai';  
+    return $country; 
+}
+add_filter( 'woocommerce_countries', 'nuevo_pais_woocommerce', 10, 1 );
